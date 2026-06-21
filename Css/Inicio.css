@@ -1,0 +1,653 @@
+body {
+  background-color: black;
+  color: gold;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("../Imagenes/Fondo\ Proyecto\ GE.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#contenedor {
+  overflow: hidden;
+  /*background-image: url("../Imagenes/Fondo\ Proyecto\ GE.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;*/
+  padding: 60px 20px;
+  width: 100%;
+}
+
+.contenedorMenu {
+  position: relative;
+  width: 100%;
+}
+
+#menu,
+.menuHamburguesa {
+  display: none;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.navegacion a {
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  background-color: gold;
+  text-align: center;
+  padding: 8px;
+  font-size: 14pt;
+  width: 20%;
+  box-sizing: border-box;
+  transition: background 0.3s;
+}
+
+.navegacion a:hover {
+  background-color: white;
+}
+
+header center div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contenedorMenu a {
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+  background-color: gold;
+  text-align: center;
+  padding: 10px;
+  font-size: 14pt;
+  width: 20%;
+  transition: background 0.3s;
+}
+
+.contenedorMenu a:hover {
+  background-color: white;
+  border: 1 solid yellow;
+}
+
+.titulo-principal {
+  color: gold !important; /* Le devuelve tu amarillo brillante */
+  font-weight: bold !important; /* Lo pone bien imponente en negrita */
+  font-size: 28pt !important; /* Ajusta el tamaño a tu gusto */
+  text-transform: uppercase !important; /* Fuerza a que todo sea mayúsculas */
+}
+
+.main {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sectionini {
+  width: 60%;
+  padding: 10px;
+}
+
+.sectionini img {
+  width: 100%;
+  height: auto;
+  border: solid 5px gold;
+  display: block;
+}
+
+.aside {
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mejor,
+.menos {
+  gap: 15px;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.aside img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border: solid 3px gold;
+}
+
+.texto-articulo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.texto-articulo h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.aside p {
+  white-space: normal;
+  text-align: justify;
+  margin: 5px 0 0 0;
+  word-break: break-word;
+}
+
+.ImagenesRuleta {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.carrusel {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 15px 5px;
+  scroll-behavior: smooth;
+}
+
+.Perfumes {
+  display: inline-block;
+  width: 220px;
+  height: 260px;
+  margin-right: 20px;
+  background-color: black;
+  border: 2px solid gold;
+  border-radius: 10px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.Perfumes img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.carrusel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+  background: gold;
+  border-radius: 4px;
+}
+
+.carrusel::-webkit-scrollbar-track {
+  background: black;
+}
+
+#footer {
+  background-color: gray;
+  color: white;
+  display: flex;
+  padding: 30px 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#footer article {
+  flex: 1;
+  min-width: 250px;
+  margin: 0;
+}
+
+.Pagos > img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 5px;
+  object-fit: cover;
+}
+
+.wasa {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.wasa img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  #contenedor {
+    padding: 30px 10px;
+    background-attachment: scroll;
+  }
+
+  div a {
+    width: 46%;
+    font-size: 11pt;
+    padding: 12px 5px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  section,
+  .aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  .mejor,
+  .menos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .aside img {
+    max-width: 180px;
+  }
+
+  #footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Pagos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header center {
+    padding: 15px;
+  }
+
+  header h1 {
+    color: gold !important;
+    font-weight: bold !important;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  .contenedorMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .menuHamburguesa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 20px;
+
+    width: 35px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 1000;
+    margin: 0 auto;
+  }
+
+  .menuHamburguesa span {
+    width: 100%;
+    height: 3px;
+    background-color: gold;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .navegacion {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    gap: 0;
+    padding: 0;
+    margin-top: 15px;
+    border-bottom: 2px solid gold;
+    border-top: 1px solid #222;
+  }
+
+  .navegacion a {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #222;
+    background-color: transparent;
+    color: gold;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .navegacion a:hover {
+    background-color: gold;
+    color: black;
+  }
+
+  #menu:checked ~ .navegacion {
+    display: flex;
+  }
+
+  #menu:checked ~ .menuHamburguesa span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  #menu:checked ~ .menuHamburguesa span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu:checked ~ .menuHamburguesa span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  /*responsive Juan*/
+}
+
+/*
+======================= 
+PARTE DE JUAN 
+=======================
+*/
+
+.venta-frag {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  justify-content: center;
+}
+
+.presentacion-frag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.producto-frag {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+}
+
+.carousel-item img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info-fondo {
+  background-color: rgba(0, 0, 0, 0.65) !important ;
+  border-radius: 0 20px 20px 0;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  min-height: 500px;
+}
+
+.as-nombre {
+  text-decoration: none;
+  color: gold !important;
+  font-weight: bold;
+}
+
+.titulo-frag {
+  color: white !important;
+}
+
+.vendidopor {
+  text-decoration: none;
+}
+
+.precios {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.precio-amarillo {
+  color: gold !important;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.porcen {
+  background-color: red !important;
+  color: white !important;
+  font-weight: bold;
+  font-size: 11pt;
+  padding: 3px 7px;
+  border-radius: 6px;
+  margin: 0 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.descuento {
+  color: gray;
+  text-decoration: line-through;
+}
+.unidadesdis {
+  color: yellow;
+  margin-top: 10px;
+}
+
+.botoncito {
+  background-color: #f0f0f0;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 10px;
+}
+
+.botoncito :hover {
+  background-color: #e0e0e0;
+}
+
+.cantidad-box input::-webkit-outer-spin-button,
+.cantidad-box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-forma {
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.estrellitas {
+  display: flex;
+}
+
+.estrellitas > img {
+  width: 20px;
+}
+
+#stardad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.ascarrito {
+  display: flex;
+  border-radius: 20px;
+  height: 35px;
+  text-decoration: none;
+  color: black !important;
+  background-color: gold;
+  justify-content: center;
+  align-items: center;
+  font-size: 16pt;
+  font-weight: bold;
+  margin-top: 10px;
+  width: auto;
+}
+
+.ascarrito:hover {
+  background-color: white;
+  color: goldenrod !important;
+  box-shadow: 4px 4px 0px 0px gray;
+  transition: all 0.1s;
+  border: 3px solid yellow;
+}
+
+.negrita {
+  font-weight: bold;
+  color: gold;
+  margin: 0;
+}
+
+.tipo-gen-class {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.tipo-gen-class > li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  margin-top: 10px;
+}
+
+.especificaciones {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ESTILOS PERSONALIZADOS DEL ACORDEÓN */
+#accordionPanelsStayOpenExample {
+  width: 100% !important; /* Ocupa todo el ancho de tu caja gris */
+  margin-top: 15px;
+}
+
+.accordion-item {
+  background-color: rgba(20, 20, 20, 0.9) !important; /* Fondo negro elegante */
+  border: 1px solid #444 !important;
+}
+
+.accordion-button {
+  background-color: #111 !important;
+  color: gold !important; /* Títulos del acordeón amarillos */
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: gold !important; /* Cuando se abre se vuelve dorado */
+  color: black !important; /* Texto negro al abrirse */
+}
+
+.accordion-body {
+  color: #f0f0f0 !important; /* Color del texto interno */
+}
+
+/*------
+CATALOGO
+------
+*/
+
+.titulo-gold {
+  color: gold !important;
+  font-weight: bold !important;
+  font-size: 2.5rem;
+}
+
+.margenes {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.banRes-hombre-mujer {
+  width: 90%;
+  max-width: 2600px;
+  height: 600;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.cards-chvrs {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card-deck {
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+}
+
+.card-perfume{
+  width: 200px;
+  height: 200px;
+  margin: 0 20 0 20;
+}
+
+.Titulo-perfume {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+
+/* 
+=======================
+FIN DE LA PARTE DE JUAN 
+=======================
+*/
