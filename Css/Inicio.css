@@ -638,6 +638,7 @@ CATALOGO
   width: 200px;
   height: 200px;
   margin: 0 20 0 20;
+  overflow: hidden;
 }
 
 .Titulo-perfume {
