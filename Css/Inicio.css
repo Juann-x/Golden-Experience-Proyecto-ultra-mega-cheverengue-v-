@@ -631,15 +631,20 @@ CATALOGO
 .card-deck {
     display: grid;
     width: 100%;
-    grid-auto-flow: column;
+    max-width: 960px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
 }
 
 .card-perfume{
-  width: 200px;
-  height: 200px;
-  margin: 0 20 0 20;
+  width: 100%;
+  max-width: 280px;
+  height: 280px;
   overflow: hidden;
 }
+
 
 .Titulo-perfume {
   text-decoration: none;
