@@ -31,7 +31,7 @@
                         <a href="../Paginas/Inicio.html">Inicio</a>
                         <a href="../Paginas/Catalogo.html">Catalogo</a>
                         <a href="../Paginas/Soporte.html">Soporte</a>
-                        <a href="../Paginas/Conocenos.html">Conocenos</a>
+                        <a href="../Paginas/conocenos.html">Conocenos</a>
                     </nav>
                 </div>
             </center>
@@ -94,7 +94,7 @@
         function createCard(numero, data) {
             let cardHTML = `
     <div class="card card-perfume">
-       
+       <!-- CONTENEDOR DEL CARRUSEL --!>
         <div id="miCarrusel_${numero}" class="carousel slide" data-bs-ride="carousel">
     
             <div class="carousel-indicators">
@@ -102,7 +102,7 @@
                     aria-current="true"></button>
                 <button type="button" data-bs-target="#miCarrusel_${numero}" data-bs-slide-to="1"></button>
             </div>
-    
+    <!-- CONTENEDOR DE LAS IMAGENES DEL CARRUSEL --!>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="${data.imagenes[0]}" class="d-block" alt="Slide 1">
@@ -111,7 +111,7 @@
                     <img src="${data.imagenes[1]}" class="d-block" alt="Slide 2">
                 </div>
             </div>
-    
+    <!-- CONTROLES PARA EL CARRUSEL --!>
             <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel_${numero}"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -124,7 +124,7 @@
                 <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
-    
+    <!-- CONTENEDOR DE INFORMACION DEL PERFUME --!>
         <div class="card-body">
             <h5 class="card-titulo"> ${data.titulo} </h5>
             <p class="card-preciazo"> ${data.descripcion} </p>
@@ -356,16 +356,15 @@
         let cardsContainerHombre = document.getElementById("card-deck-hombre");
         let cardsContainerMujer = document.getElementById("card-deck-mujer");
 
-
         for (let i = 0; i < cardsData.length; i++) {
-            if (cardsData[i].forMen) {
-                cardsContainerHombre.innerHTML += createCard(i, cardsData[i]);
+            let card = cardsData[i];
+            let card_perohmtl = createCard(i, card);
+            if (card.forMen) {
+                cardsContainerHombre.innerHTML += card_perohmtl;
             } else {
-                cardsContainerMujer.innerHTML += createCard(i, cardsData[i]);
+                cardsContainerMujer.innerHTML += card_perohmtl;
             }
         }
-
-
 
 
 

@@ -1,0 +1,409 @@
+body {
+    background-image: url("../Imagenes/FondoProyecto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: gold;
+    font-size: 40pt;
+}
+
+header p {
+    color: white;
+    font-size: 18pt;
+}
+
+#menu-hamburguesa {
+    display: none;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    margin: 5px;
+    width: 150px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 12pt;
+    text-align: center;
+    background-color: gold;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid gold;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+
+/*section{
+    background-color: black;
+    border: 1px solid gold;
+}*/
+
+
+/* HISTORIA */
+
+
+.caja-historia {
+    display: flex;
+    background-color: black;
+    border: 2px solid gold;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.texto-historia {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.texto-historia h2 {
+    color: gold;
+    font-size: 30px;
+}
+
+.texto-historia p {
+    color: white;
+    text-align: justify;
+    line-height: 28px;
+    font-size: 15pt;
+}
+
+.imagen-historia {
+    width: 50%;
+}
+
+.imagen-historia img {
+    width: 100%;
+}
+
+
+/* MISION */
+
+
+.caja-mision {
+    display: flex;
+    border: 2px solid gold;
+    background-color: black;
+    padding: 20px;
+    margin-top: 40px;
+
+}
+
+.imagen-mision {
+    width: 50%;
+}
+
+.imagen-mision img {
+    width: 100%;
+}
+
+.texto-mision {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.texto-mision h2 {
+    color: gold;
+    font-size: 30px;
+}
+
+.texto-mision p {
+    color: white;
+    text-align: justify;
+    line-height: 28px;
+    font-size: 15pt;
+}
+
+
+/* VISION */
+
+
+.caja-vision {
+    display: flex;
+    background-color: black;
+    border: 2px solid gold;
+    padding: 20px;
+    margin-top: 40px;
+
+}
+
+.imagen-vision {
+    width: 50%;
+}
+
+.imagen-vision img {
+    width: 100%;
+}
+
+.texto-vision {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.texto-vision h2 {
+    color: gold;
+    font-size: 30px;
+}
+
+.texto-vision p {
+    color: white;
+    text-align: justify;
+    line-height: 28px;
+    font-size: 15pt;
+}
+
+
+/* VALORES */
+
+
+#valores {
+    margin-top: 40px;
+    background-color: black;
+    border: 2px solid gold;
+}
+
+#valores h2 {
+    color: gold;
+    text-align: center;
+    font-size: 24pt;
+}
+
+.contenedor-valores {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-valores article {
+    width: 250px;
+    margin: 40px;
+    padding: 10px;
+    border: 1px solid gold;
+}
+
+
+.contenedor-valores img {
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+.contenedor-valores h3 {
+    color: gold;
+    text-align: center;
+}
+
+.contenedor-valores p {
+    color: white;
+    text-align: justify;
+}
+
+
+
+/* EQUIPO */
+
+
+#equipo {
+    background-color: black;
+    margin-top: 40px;
+    border: 2px solid gold;
+    padding: 30px;
+}
+
+#equipo h2 {
+    color: gold;
+    text-align: center;
+    font-size: 24pt;
+}
+
+.contenedor-equipo {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-equipo article {
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.contenedor-equipo img {
+    width: 180px;
+    height: 220px;
+    border: 1px solid gold;
+}
+
+.contenedor-equipo h3 {
+    color: white;
+    font-size: 15pt;
+    min-height: 60px;
+}
+
+
+/* FOOTER */
+
+
+footer {
+    background-color: black;
+    padding: 0.1px;
+    margin-top: 50px;
+
+}
+
+.footer-contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 2%;
+    flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-menu,
+.footer-redes,
+.footer-pagos {
+    width: auto;
+    max-width: 250px;
+}
+
+footer h3 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: white;
+}
+
+.footer-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-menu a:hover {
+    color: gold;
+}
+
+.footer-redes a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-redes img {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+}
+
+.footer-pagos img {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+}
+
+.footer-copy {
+
+    border-top: 2px solid gold;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 0px;
+
+
+    font-size: 15pt;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    nav a {
+        width: 80%;
+        margin: 5px auto;
+        display: block;
+    }
+
+    .caja-historia,
+    .caja-mision,
+    .caja-vision {
+        flex-direction: column;
+    }
+
+    .texto-historia,
+    .texto-mision,
+    .texto-vision,
+    .imagen-historia,
+    .imagen-mision,
+    .imagen-vision {
+        width: 100%;
+    }
+
+    .imagen-historia img,
+    .imagen-mision img,
+    .imagen-vision img {
+        width: 100%;
+    }
+
+    .contenedor-valores{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .contenedor-valores article{
+        width:40%;
+        margin:10px;
+    }
+
+    .contenedor-equipo{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .contenedor-equipo article{
+        width:45%;
+        margin:10px;
+    }
+
+
+    .footer-contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #menu-hamburguesa {
+        display: block;
+        color: gold;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #menu {
+        display: none;
+    }
+
+}

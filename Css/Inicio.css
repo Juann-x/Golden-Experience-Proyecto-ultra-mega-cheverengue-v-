@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-image: url("../Imagenes/Fondo\ Proyecto\ GE.png");
+  background-image: url("../Imagenes/FondoProyecto.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -713,16 +713,15 @@ CATALOGO
 
 @media screen and (max-width: 576px) {
   .card-deck {
-    gap: 15px; /* Reducimos el espacio entre tarjetas en celular */
+    gap: 15px;
     padding: 0 15px;
   }
 
   .card-perfume .carousel-item img {
-    height: 240px; /* Altura ideal de imagen para pantallas móviles */
+    height: 240px;
   }
-
   .card-preciazo {
-    font-size: 16pt; /* Reducimos un poco el precio para que no rompa el diseño */
+    font-size: 16pt;
   }
 
   .card-desc {
@@ -732,14 +731,13 @@ CATALOGO
   .btncompra {
     width: 95%;
     font-size: 0.9rem;
-    padding: 10px 0; /* Un botón ligeramente más alto es más fácil de presionar con el dedo */
+    padding: 10px 0;
   }
 
   .banRes-hombre-mujer {
-    height: 200px; /* Evita que los banners gigantes se coman toda la pantalla del celular */
-  }
+    height: 200px; 
 }
-
+}
 
 /* 
 =======================
