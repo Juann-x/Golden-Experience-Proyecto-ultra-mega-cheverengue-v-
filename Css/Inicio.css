@@ -646,7 +646,7 @@ CATALOGO
   width: 100%;
   max-width: 1200px;
   margin: 40px auto;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 25px;
   justify-items: center;
   padding: 0 20px;
@@ -654,25 +654,34 @@ CATALOGO
 
 .card-perfume {
   width: 100%;
-  max-width: 280px;
+  max-width: 100%;
   height: auto;
   border: 3px solid gold !important;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.Titulo-perfume {
+.card-titulo {
   text-decoration: none;
   color: #111;
   font-weight: bold;
 }
 
 .card-preciazo{
-  font-size: 18pt;
+  font-size: 20pt;
+  color: goldenrod;
   font-weight: bold;
 }
 
+.card-desc {
+  color: gray;
+  text-decoration: line-through;
+  font-size: 16pt;
+}
+
 .card-perfume .carousel-item img {
-  height: 250px;
+  height: 280px; 
   width: 100%;
   object-fit: cover;
 }
@@ -692,10 +701,43 @@ CATALOGO
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.btn-comprar:hover {
-    background-color: #d4ac0d;      /* Un amarillo un poco más oscuro al pasar el cursor */
-    color: #000000;
-    transform: scale(1.02);         /* Efecto sutil de crecimiento */
+.btncompra:hover {
+    background-color: #d4ac0d;  
+    transform: scale(1.02); 
+}
+
+.btncompra:active {
+    transform: scale(1);
+}
+
+
+@media screen and (max-width: 576px) {
+  .card-deck {
+    gap: 15px; /* Reducimos el espacio entre tarjetas en celular */
+    padding: 0 15px;
+  }
+
+  .card-perfume .carousel-item img {
+    height: 240px; /* Altura ideal de imagen para pantallas móviles */
+  }
+
+  .card-preciazo {
+    font-size: 16pt; /* Reducimos un poco el precio para que no rompa el diseño */
+  }
+
+  .card-desc {
+    font-size: 13pt;
+  }
+  
+  .btncompra {
+    width: 95%;
+    font-size: 0.9rem;
+    padding: 10px 0; /* Un botón ligeramente más alto es más fácil de presionar con el dedo */
+  }
+
+  .banRes-hombre-mujer {
+    height: 200px; /* Evita que los banners gigantes se coman toda la pantalla del celular */
+  }
 }
 
 
